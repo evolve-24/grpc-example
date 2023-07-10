@@ -14,7 +14,7 @@ public class ExampleServiceGrpc extends ev24.protobuf.example.ExampleServiceGrpc
 		ExampleResponse response = ExampleResponse.newBuilder()
 			.setRequestId(request.getRequestId())
 			.putAllPayload(request.getPayloadMap())
-			.putAllPayload(Map.of("test1", "value1", "test1", "value1"))
+			.putAllPayload(Map.of("test1", "value1", "test2", "value2"))
 			.build();
 
 		responseObserver.onNext(response);
